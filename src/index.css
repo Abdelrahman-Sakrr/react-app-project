@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg-grey : #2C3E50;
+  --bg-green : #1ABC9C;
+}
+.bg-grey{
+  background-color: var(--bg-grey);
+  /* width: 100%; */
+}
+.text-dark{
+  color: rgb(44, 62, 80);
+}
+.row{
+  @apply flex flex-wrap
+}
+.btn{
+  @apply rounded-lg px-3 py-2 outline outline-2 outline-[var(--bg-grey)]
+}
+.bg-copyRight{
+  background-color: #1A252F;
+}
+.bg-green{
+  background-color: var(--bg-green);
+}
+#root{
+  padding: 0;
+  margin: 0;
+  max-width:none;
+}
+.active{
+  background-color: var(--bg-green);
+  color: white;
+  padding:8px;
+  border-radius: 10%;
+}
